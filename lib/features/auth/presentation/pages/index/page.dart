@@ -65,7 +65,10 @@ class AuthPage extends StatelessWidget {
                   icon: const Icon(Icons.facebook_rounded),
                   label: 'Sign In with Facebook',
                   onPressed: () {
-                    EasyLoading.showInfo('This feature is unavailable.');
+                    EasyLoading.showInfo(
+                      'This feature is unavailable.',
+                      dismissOnTap: true,
+                    );
                   },
                 ),
                 const SizedBox(height: Dimens.dp16),
@@ -78,7 +81,10 @@ class AuthPage extends StatelessWidget {
                   isLight: true,
                   label: 'Sign In with Google',
                   onPressed: () {
-                    EasyLoading.showInfo('This feature is unavailable.');
+                    EasyLoading.showInfo(
+                      'This feature is unavailable.',
+                      dismissOnTap: true,
+                    );
                   },
                 ),
               ],

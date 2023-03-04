@@ -66,8 +66,10 @@ class _PasswordInputState extends State<PasswordInput> {
           isVisible = !isVisible;
         });
       },
+      borderRadius: BorderRadius.circular(Dimens.dp100),
       child: Icon(
         isVisible ? Icons.visibility_outlined : Icons.visibility_off_outlined,
+        size: Dimens.dp18,
       ),
     );
   }

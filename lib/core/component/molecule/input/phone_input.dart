@@ -169,7 +169,10 @@ class _PhoneTextInputState extends State<PhoneTextInput> {
           height: Dimens.dp16,
         ),
         const SizedBox(width: Dimens.dp8),
-        SubTitleText.light(phone.dialCode),
+        SubTitleText(
+          phone.dialCode,
+          style: context.adaptiveTheme.regularTextStyle,
+        ),
       ],
     );
   }
@@ -262,7 +265,14 @@ class __CountryListState extends State<_CountryList> {
           );
         },
         separatorBuilder: (_, __) {
-          return const Divider(height: 1, thickness: 1);
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: Dimens.dp16),
+            child: Divider(
+              height: 1,
+              thickness: .3,
+              color: context.adaptiveTheme.disabledColor,
+            ),
+          );
         },
         itemCount: data.length,
       ),

@@ -31,6 +31,7 @@ class _FormSectionState extends State<_FormSection> {
         const SizedBox(height: Dimens.dp16),
         RegularInput(
           hintText: 'Email',
+          prefixIcon: Icons.email_outlined,
           controller: emailController,
           inputType: TextInputType.emailAddress,
         ),
@@ -59,7 +60,9 @@ class _FormSectionState extends State<_FormSection> {
         ),
         const SizedBox(height: Dimens.dp10),
         OutlinedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, AppRoutes.resgister);
+          },
           child: const Text('Sign Up'),
         ),
       ],

@@ -121,33 +121,33 @@ class LightTheme {
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(Dimens.dp8),
+          borderRadius: BorderRadius.circular(Dimens.dp14),
         ),
         disabledBorder: OutlineInputBorder(
           borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(Dimens.dp8),
+          borderRadius: BorderRadius.circular(Dimens.dp14),
         ),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(Dimens.dp8),
+          borderRadius: BorderRadius.circular(Dimens.dp14),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: primaryColor,
           ),
-          borderRadius: BorderRadius.circular(Dimens.dp8),
+          borderRadius: BorderRadius.circular(Dimens.dp14),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: errorColor,
           ),
-          borderRadius: BorderRadius.circular(Dimens.dp8),
+          borderRadius: BorderRadius.circular(Dimens.dp14),
         ),
         errorBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: errorColor,
           ),
-          borderRadius: BorderRadius.circular(Dimens.dp8),
+          borderRadius: BorderRadius.circular(Dimens.dp14),
         ),
       );
 

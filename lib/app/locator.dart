@@ -79,8 +79,8 @@ Future<void> _setupCore() async {
     ..maskType = EasyLoadingMaskType.black
     ..radius = 16
     ..backgroundColor = AppColors.secondary[700]
-    ..indicatorColor = AppColors.primary
-    ..textColor = AppColors.primary
+    ..indicatorColor = AppColors.primary[100]
+    ..textColor = AppColors.primary[100]
     ..userInteractions = true
     ..dismissOnTap = false
     ..animationStyle = EasyLoadingAnimationStyle.opacity;
