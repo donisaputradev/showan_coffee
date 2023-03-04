@@ -6,20 +6,20 @@ class AppColors {
   // Color's pallete from https://materialui.co/colors/
   // ------------------------------------------------- //
 
-  static const primary = MaterialColor(0xFF795548, {
+  static const primary = MaterialColor(0xFF9E9E9E, {
+    100: Color(0xFFF5F5F5),
+    300: Color(0xFFE0E0E0),
+    500: Color(0xFF9E9E9E),
+    700: Color(0xFF616161),
+    900: Color(0xFF0C0F14),
+  });
+
+  static const secondary = MaterialColor(0xFF795548, {
     100: Color(0xFFD7CCC8),
     300: Color(0xFFA1887F),
     500: Color(0xFF795548),
     700: Color(0xFF5D4037),
     900: Color(0xFF3E2723),
-  });
-
-  static const secondary = MaterialColor(0xFF9E9E9E, {
-    100: Color(0xFFF5F5F5),
-    300: Color(0xFFE0E0E0),
-    500: Color(0xFF9E9E9E),
-    700: Color(0xFF616161),
-    900: Color(0xFF212121),
   });
 
   static const amber = MaterialColor(0xFFFFC107, {

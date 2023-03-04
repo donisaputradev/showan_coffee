@@ -5,15 +5,15 @@ class LightTheme {
   LightTheme(this.primaryColor);
 
   final Color primaryColor;
-  static Color disabledTextColor = AppColors.secondary[700]!;
-  static Color disabledColor = AppColors.secondary[700]!;
-  static Color textSolidColor = AppColors.secondary[100]!;
+  static Color disabledTextColor = AppColors.primary[700]!;
+  static Color disabledColor = AppColors.primary[700]!;
+  static Color textSolidColor = AppColors.primary[100]!;
   static Color errorColor = AppColors.red;
-  static Color dividerColor = AppColors.secondary[300]!;
-  static Color inputBackgroundColor = AppColors.secondary[100]!;
-  static Color scaffoldColor = AppColors.secondary[900]!;
+  static Color dividerColor = AppColors.primary[300]!;
+  static Color inputBackgroundColor = AppColors.primary[100]!;
+  static Color scaffoldColor = AppColors.primary[900]!;
   static Color cardColor = AppColors.primary;
-  static Color appBarColor = AppColors.secondary[900]!;
+  static Color appBarColor = AppColors.primary[900]!;
 
   ColorScheme get scheme => ColorScheme.light(
         primary: primaryColor,

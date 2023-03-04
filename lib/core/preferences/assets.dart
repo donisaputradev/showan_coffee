@@ -8,6 +8,7 @@ class MainAssets {
   // Bitmap
   static const bgCoffeeImg = '$_baseImagePath/bitmap/bg_coffee.webp';
   static const splashLogoImg = '$_baseImagePath/bitmap/splash_logo.webp';
+  static const googleImg = '$_baseImagePath/bitmap/icon_google.webp';
 
   // Icon
   static const logoIconImg = '$_baseImagePath/icons/ic_logo.webp';

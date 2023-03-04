@@ -33,6 +33,10 @@ class App extends StatelessWidget {
           create: (context) =>
               GetIt.I<LanguageBloc>()..add(const LanguageStarted()),
         ),
+        BlocProvider(
+          create: (context) =>
+              GetIt.I<SplashBloc>()..add(const NavigateSplashEvent()),
+        ),
       ],
       child: const _AppWidget(),
     );

@@ -1,3 +1,3 @@
 class AppRoutes {
-  static const auth = '/login';
+  static const auth = '/auth';
 }

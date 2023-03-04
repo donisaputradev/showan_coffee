@@ -57,6 +57,9 @@ Future<void> setupLocator() async {
         getThemeSetting: getIt(),
         saveThemeSetting: getIt(),
       ),
+    )
+    ..registerFactory(
+      () => SplashBloc(),
     );
 
   // ------------------------------ END SETTINGS -------------------------------
