@@ -8,11 +8,13 @@ class SocialTextIconButton extends StatelessWidget {
     required this.icon,
     required this.label,
     this.isLight = false,
+    required this.onPressed,
   });
   final Color bgColor;
   final Widget icon;
   final String label;
   final bool isLight;
+  final Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class SocialTextIconButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(Dimens.dp14),
         ),
       ),
-      onPressed: () {},
+      onPressed: onPressed,
       icon: icon,
       label: Text(
         label,

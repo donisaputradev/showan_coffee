@@ -12,6 +12,11 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
         builder: (_) => const AuthPage(),
         settings: settings,
       );
+    case AppRoutes.login:
+      return MaterialPageRoute(
+        builder: (_) => const LoginPage(),
+        settings: settings,
+      );
     default:
       return CupertinoPageRoute(builder: (_) {
         return const Scaffold(

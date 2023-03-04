@@ -6,6 +6,7 @@ class LightTheme {
 
   final Color primaryColor;
   static Color disabledTextColor = AppColors.primary[700]!;
+  static Color secondaryColor = AppColors.secondary[700]!;
   static Color disabledColor = AppColors.primary[700]!;
   static Color textSolidColor = AppColors.primary[100]!;
   static Color errorColor = AppColors.red;
@@ -40,7 +41,7 @@ class LightTheme {
             color: primaryColor,
           ),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(Dimens.dp8),
+            borderRadius: BorderRadius.circular(Dimens.dp14),
           ),
           padding: const EdgeInsets.symmetric(
             vertical: Dimens.dp12,
@@ -56,9 +57,10 @@ class LightTheme {
   ElevatedButtonThemeData get elevatedButton => ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           foregroundColor: scheme.onPrimary,
-          backgroundColor: primaryColor,
+          backgroundColor: secondaryColor,
+          disabledBackgroundColor: secondaryColor.withOpacity(.7),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(Dimens.dp8),
+            borderRadius: BorderRadius.circular(Dimens.dp14),
           ),
           shadowColor: Colors.transparent,
           padding: const EdgeInsets.symmetric(
@@ -69,7 +71,6 @@ class LightTheme {
             color: scheme.onPrimary,
             fontFamily: 'Poppins',
           ),
-          elevation: 0,
         ),
       );
 

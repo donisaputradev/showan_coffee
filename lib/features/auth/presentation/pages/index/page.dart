@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:showan_coffee/app/routes.dart';
 import 'package:showan_coffee/core/core.dart';
 
 class AuthPage extends StatelessWidget {
@@ -49,16 +51,22 @@ class AuthPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const SocialTextIconButton(
+                SocialTextIconButton(
                   bgColor: AppColors.secondary,
-                  icon: Icon(Icons.email_rounded),
+                  icon: const Icon(Icons.email_rounded),
                   label: 'Sign In with Email',
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.login);
+                  },
                 ),
                 const SizedBox(height: Dimens.dp16),
-                const SocialTextIconButton(
+                SocialTextIconButton(
                   bgColor: AppColors.indigo,
-                  icon: Icon(Icons.facebook_rounded),
+                  icon: const Icon(Icons.facebook_rounded),
                   label: 'Sign In with Facebook',
+                  onPressed: () {
+                    EasyLoading.showInfo('This feature is unavailable.');
+                  },
                 ),
                 const SizedBox(height: Dimens.dp16),
                 SocialTextIconButton(
@@ -69,6 +77,9 @@ class AuthPage extends StatelessWidget {
                   ),
                   isLight: true,
                   label: 'Sign In with Google',
+                  onPressed: () {
+                    EasyLoading.showInfo('This feature is unavailable.');
+                  },
                 ),
               ],
             ),

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive/hive.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
@@ -71,6 +72,18 @@ Future<void> setupLocator() async {
 
 Future<void> _setupCore() async {
   EquatableConfig.stringify = AppConfig.autoStringifyEquatable;
+
+  EasyLoading.instance
+    ..indicatorType = EasyLoadingIndicatorType.doubleBounce
+    ..loadingStyle = EasyLoadingStyle.custom
+    ..maskType = EasyLoadingMaskType.black
+    ..radius = 16
+    ..backgroundColor = AppColors.secondary[700]
+    ..indicatorColor = AppColors.primary
+    ..textColor = AppColors.primary
+    ..userInteractions = true
+    ..dismissOnTap = false
+    ..animationStyle = EasyLoadingAnimationStyle.opacity;
 
   // External
   getIt.registerLazySingleton(InternetConnectionChecker.new);
