@@ -5,15 +5,15 @@ class LightTheme {
   LightTheme(this.primaryColor);
 
   final Color primaryColor;
-  static Color disabledTextColor = AppColors.grey;
-  static Color disabledColor = AppColors.grey[100]!;
-  static const Color textSolidColor = Colors.black;
-  static Color errorColor = AppColors.dustRed[700]!;
-  static Color dividerColor = AppColors.greyChateau[100]!;
-  static const inputBackgroundColor = Color(0xFFFAFAFA);
-  static const Color scaffoldColor = Colors.white;
-  static const Color cardColor = Colors.white;
-  static const Color appBarColor = Colors.white;
+  static Color disabledTextColor = AppColors.secondary[700]!;
+  static Color disabledColor = AppColors.secondary[700]!;
+  static Color textSolidColor = AppColors.secondary[100]!;
+  static Color errorColor = AppColors.red;
+  static Color dividerColor = AppColors.secondary[300]!;
+  static Color inputBackgroundColor = AppColors.secondary[100]!;
+  static Color scaffoldColor = AppColors.secondary[900]!;
+  static Color cardColor = AppColors.primary;
+  static Color appBarColor = AppColors.secondary[900]!;
 
   ColorScheme get scheme => ColorScheme.light(
         primary: primaryColor,
@@ -48,6 +48,7 @@ class LightTheme {
           ),
           textStyle: text.labelLarge?.copyWith(
             color: primaryColor,
+            fontFamily: 'Poppins',
           ),
         ),
       );
@@ -94,6 +95,7 @@ class LightTheme {
         ),
         toolbarTextStyle: text.titleLarge?.copyWith(
           color: textSolidColor,
+          fontFamily: 'Poppins',
           fontWeight: FontWeight.w600,
           fontSize: 16,
         ),
@@ -151,9 +153,15 @@ class LightTheme {
   BottomNavigationBarThemeData get bottomNav => BottomNavigationBarThemeData(
         backgroundColor: cardColor,
         elevation: 8,
-        unselectedItemColor: AppColors.grey[300],
-        selectedLabelStyle: const TextStyle(fontSize: Dimens.dp12),
-        unselectedLabelStyle: const TextStyle(fontSize: Dimens.dp12),
+        unselectedItemColor: AppColors.secondary,
+        selectedLabelStyle: const TextStyle(
+          fontSize: Dimens.dp12,
+          fontFamily: 'Poppins',
+        ),
+        unselectedLabelStyle: const TextStyle(
+          fontSize: Dimens.dp12,
+          fontFamily: 'Poppins',
+        ),
       );
 
   TabBarTheme get tabBar => TabBarTheme(
@@ -177,43 +185,50 @@ class LightTheme {
       );
 
   TextTheme get text => TextTheme(
-        bodyLarge: const TextStyle(
+        bodyLarge: TextStyle(
           color: textSolidColor,
           fontSize: Dimens.dp14,
           fontWeight: FontWeight.normal,
+          fontFamily: 'Poppins',
         ),
         // Use for regular text
         bodyMedium: TextStyle(
           color: disabledTextColor,
           fontSize: Dimens.dp12,
           fontWeight: FontWeight.normal,
+          fontFamily: 'Poppins',
         ),
         // Use for heading text
-        headlineSmall: const TextStyle(
+        headlineSmall: TextStyle(
           color: textSolidColor,
           fontWeight: FontWeight.w600,
           fontSize: Dimens.dp24,
+          fontFamily: 'Poppins',
         ),
         // Use for title text, AppBar
-        titleLarge: const TextStyle(
+        titleLarge: TextStyle(
           color: textSolidColor,
           fontWeight: FontWeight.w700,
           fontSize: Dimens.dp16,
+          fontFamily: 'Poppins',
         ),
         // Use for sub title text
-        titleMedium: const TextStyle(
+        titleMedium: TextStyle(
           color: textSolidColor,
           fontWeight: FontWeight.w600,
           fontSize: Dimens.dp14,
+          fontFamily: 'Poppins',
         ),
 
         labelLarge: const TextStyle(
           fontSize: Dimens.dp14,
           fontWeight: FontWeight.w600,
+          fontFamily: 'Poppins',
         ),
         // Use for caption
         bodySmall: TextStyle(
           fontSize: Dimens.dp10,
+          fontFamily: 'Poppins',
           color: disabledTextColor,
         ),
       );
@@ -224,9 +239,9 @@ class LightTheme {
         elevation: 2,
       );
 
-  BottomSheetThemeData get bottomSheet => const BottomSheetThemeData(
+  BottomSheetThemeData get bottomSheet => BottomSheetThemeData(
         backgroundColor: scaffoldColor,
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(Dimens.dp20),
           ),
@@ -240,6 +255,7 @@ class LightTheme {
 
   ThemeData get toTheme {
     return ThemeData(
+      useMaterial3: true,
       fontFamily: 'Poppins',
       primaryColor: primaryColor,
       scaffoldBackgroundColor: scaffoldColor,
