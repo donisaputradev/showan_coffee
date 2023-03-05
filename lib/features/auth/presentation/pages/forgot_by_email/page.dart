@@ -51,7 +51,15 @@ class _ForgotByEmailPageState extends State<ForgotByEmailPage> {
                 ),
                 const SizedBox(height: Dimens.dp24),
                 ElevatedButton(
-                  onPressed: emailController.text.isNotEmpty ? () {} : null,
+                  onPressed: emailController.text.isNotEmpty
+                      ? () {
+                          Navigator.pushNamed(
+                            context,
+                            AppRoutes.verification,
+                            arguments: false,
+                          );
+                        }
+                      : null,
                   child: const Text('Send OTP'),
                 ),
                 const SizedBox(height: Dimens.dp8),
