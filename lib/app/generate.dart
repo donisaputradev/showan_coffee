@@ -22,6 +22,16 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
         builder: (_) => const RegisterPage(),
         settings: settings,
       );
+    case AppRoutes.forgotByEmail:
+      return MaterialPageRoute(
+        builder: (_) => const ForgotByEmailPage(),
+        settings: settings,
+      );
+    case AppRoutes.forgotByPhone:
+      return MaterialPageRoute(
+        builder: (_) => const ForgotByPhonePage(),
+        settings: settings,
+      );
     default:
       return CupertinoPageRoute(builder: (_) {
         return const Scaffold(

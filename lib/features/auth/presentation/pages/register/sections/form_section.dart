@@ -45,6 +45,7 @@ class _FormSectionState extends State<_FormSection> {
         ),
         const SizedBox(height: Dimens.dp16),
         PhoneTextInput(
+          hintText: 'Mobile Number',
           controller: phoneController,
         ),
         const SizedBox(height: Dimens.dp16),

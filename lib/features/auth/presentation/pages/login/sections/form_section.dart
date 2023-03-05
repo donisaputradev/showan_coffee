@@ -50,12 +50,12 @@ class _FormSectionState extends State<_FormSection> {
         ),
         const SizedBox(height: Dimens.dp10),
         Row(
-          children: const [
-            Expanded(child: Divider()),
-            SizedBox(width: Dimens.dp6),
-            RegularText('Or'),
-            SizedBox(width: Dimens.dp6),
-            Expanded(child: Divider()),
+          children: [
+            Expanded(child: Divider(color: context.theme.disabledColor)),
+            const SizedBox(width: Dimens.dp6),
+            const RegularText('Or'),
+            const SizedBox(width: Dimens.dp6),
+            Expanded(child: Divider(color: context.theme.disabledColor)),
           ],
         ),
         const SizedBox(height: Dimens.dp10),

@@ -33,7 +33,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
-                      // navigate to desired screen
+                      Navigator.pushNamed(context, AppRoutes.forgotByEmail);
                     },
                 ),
               ],
