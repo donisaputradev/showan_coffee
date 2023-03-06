@@ -66,7 +66,13 @@ class _FormSectionState extends State<_FormSection> {
                   phoneController.text.isNotEmpty &&
                   emailController.text.isNotEmpty &&
                   passwordController.text.isNotEmpty
-              ? () {}
+              ? () {
+                  Navigator.pushNamedAndRemoveUntil(
+                    context,
+                    AppRoutes.home,
+                    (route) => false,
+                  );
+                }
               : null,
           child: const Text('Sign Up'),
         ),

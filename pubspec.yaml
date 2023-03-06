@@ -11,11 +11,13 @@ dependencies:
   flutter:
     sdk: flutter
   bloc_concurrency: ^0.2.1
+  carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.2
   dartz: ^0.10.1
   flutter_easyloading: ^3.0.5
   dio: ^5.0.1
   equatable: ^2.0.5
+  fluid_bottom_nav_bar: ^1.4.0
   flutter_bloc: ^8.1.2
   flutter_localizations:
     sdk: flutter
@@ -43,6 +45,7 @@ flutter:
     - assets/images/
     - assets/images/bitmap/
     - assets/images/flags/
+    - assets/images/illustration/
 
   fonts:
     - family: Poppins

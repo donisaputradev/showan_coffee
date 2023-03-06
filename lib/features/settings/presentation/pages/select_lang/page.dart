@@ -28,7 +28,7 @@ class _SelectLanguagePageState extends State<SelectLanguagePage> {
           child: BlocBuilder<LanguageBloc, LanguageState>(
             builder: (context, state) {
               return ListView.separated(
-                padding: const EdgeInsets.all(Dimens.defaultPadding),
+                padding: const EdgeInsets.all(Dimens.dp16),
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemBuilder: (_, i) {

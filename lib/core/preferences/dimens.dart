@@ -8,8 +8,6 @@ class Dimens {
   static double height(BuildContext context) =>
       MediaQuery.of(context).size.height;
 
-  static const double defaultPadding = 16;
-
   static const double dp2 = 2;
   static const double dp4 = 4;
   static const double dp6 = 6;
