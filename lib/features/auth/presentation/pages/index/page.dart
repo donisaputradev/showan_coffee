@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:showan_coffee/app/routes.dart';
 import 'package:showan_coffee/core/core.dart';
 
@@ -65,9 +64,10 @@ class AuthPage extends StatelessWidget {
                   icon: const Icon(Icons.facebook_rounded),
                   label: 'Sign In with Facebook',
                   onPressed: () {
-                    EasyLoading.showInfo(
-                      'This feature is unavailable.',
-                      dismissOnTap: true,
+                    Navigator.pushNamedAndRemoveUntil(
+                      context,
+                      AppRoutes.home,
+                      (route) => false,
                     );
                   },
                 ),
@@ -81,9 +81,10 @@ class AuthPage extends StatelessWidget {
                   isLight: true,
                   label: 'Sign In with Google',
                   onPressed: () {
-                    EasyLoading.showInfo(
-                      'This feature is unavailable.',
-                      dismissOnTap: true,
+                    Navigator.pushNamedAndRemoveUntil(
+                      context,
+                      AppRoutes.home,
+                      (route) => false,
                     );
                   },
                 ),

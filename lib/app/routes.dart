@@ -7,4 +7,5 @@ class AppRoutes {
   static const verification = '/verification';
   static const newPassword = '/password/new';
   static const home = '/home';
+  static const settings = '/settings';
 }

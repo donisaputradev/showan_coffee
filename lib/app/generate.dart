@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:showan_coffee/features/auth/auth.dart';
 import 'package:showan_coffee/features/home/home.dart';
+import 'package:showan_coffee/features/settings/settings.dart';
 
 final RouteObserver<ModalRoute> routeObserver = RouteObserver<ModalRoute>();
 
@@ -31,6 +32,11 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
     case AppRoutes.forgotByPhone:
       return MaterialPageRoute(
         builder: (_) => const ForgotByPhonePage(),
+        settings: settings,
+      );
+    case AppRoutes.settings:
+      return CupertinoPageRoute(
+        builder: (_) => const SettingsPage(),
         settings: settings,
       );
     case AppRoutes.verification:

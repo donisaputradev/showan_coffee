@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:showan_coffee/app/routes.dart';
 import 'package:showan_coffee/core/core.dart';
 
 part 'sections/banner_section.dart';
@@ -19,14 +20,16 @@ class HomePage extends StatelessWidget {
           children: [
             const SubTitleText('Good Morning!'),
             HeadingText(
-              'Doni Syahputra',
+              'Doni Mulya Syahputra',
               style: TextStyle(color: AppColors.amber[700]),
             ),
           ],
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, AppRoutes.settings);
+            },
             icon: Container(
               padding: const EdgeInsets.all(Dimens.dp2),
               decoration: BoxDecoration(

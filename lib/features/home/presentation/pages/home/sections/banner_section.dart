@@ -9,7 +9,6 @@ class _BannerSection extends StatefulWidget {
 
 class _BannerSectionState extends State<_BannerSection> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
 
   final banners = [
     MainAssets.banner1Img,

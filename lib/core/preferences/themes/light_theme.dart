@@ -26,7 +26,7 @@ class LightTheme {
         buttonColor: primaryColor,
         disabledColor: disabledTextColor,
         padding: const EdgeInsets.symmetric(
-          vertical: Dimens.dp12,
+          vertical: Dimens.dp8,
           horizontal: Dimens.dp24,
         ),
         shape: RoundedRectangleBorder(
